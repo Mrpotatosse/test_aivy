@@ -1,0 +1,14 @@
+# ignore .env
+.env
+
+# ignore test
+/test
+
+# ignore node_modules
+/node_modules
+
+# ignore protocol
+/src/mitm/dofus/on_server_started/dofus_protocol_*.json
+
+# ignore dlm files
+/src/mitm/dofus/on_server_started/dofus_map_*/*.dlm

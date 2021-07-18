@@ -1,0 +1,1 @@
+module.exports = (socket) => console.log('ws:client connected');

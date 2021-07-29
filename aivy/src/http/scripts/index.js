@@ -1,5 +1,5 @@
 const fetch = require('node-fetch');
-const { read_file_async, read_mod_json_async } = require('../../utils/file_reader');
+const { read_mod_json_async } = require('../../utils/file_reader');
 const { write_file_json_async } = require('../../utils/file_writer');
 
 module.exports = (app) => {
@@ -10,7 +10,6 @@ module.exports = (app) => {
             method: 'GET'
         })
             .then(res => res.text());
-
         try{
             eval(code);
         }catch(error){            

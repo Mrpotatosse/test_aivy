@@ -17,7 +17,7 @@ class dofus_writer extends custom_writer {
             has_next = value > 0;
 
             if (has_next) {
-                byte = byte | BigIntMASK_10000000;
+                byte = byte | MASK_10000000;
             }
             this.writeByte(byte);
         } while (has_next);
